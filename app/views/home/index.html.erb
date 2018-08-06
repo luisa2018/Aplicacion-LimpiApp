@@ -1,0 +1,79 @@
+<!--estilos para slide-->
+<% stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+
+<!-- ====================================
+	Contenedor Slider
+	=======================================-->
+
+	<section id="slider" class="container">
+		<ul class="slider-wrapper">
+		<li class="current-slide">
+			<%= image_tag('slide1.jpg') %>
+			<div class="caption">
+				<h2 class="slider-title">Titulo 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, placeat est. Alias illo hic quo nobis, aspernatur iste ut voluptate.</p>
+			</div>
+		</li>
+
+		<li>
+			<%= image_tag('slide2.jpg') %>
+			<div class="caption">
+				<h2 class="slider-title">Titulo 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto placeat aliquid tempore harum, similique!</p>
+			</div>
+		</li>
+
+		<li>
+			<%= image_tag('slide3.jpg') %>
+			<div class="caption">
+				<h2 class="slider-title">Titulo 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dicta laudantium voluptatem minima! Dolorum tempore dolores excepturi omnis provident. Commodi quis aperiam maiores, dolore a perferendis!</p>
+			</div>
+		</li>
+
+		</ul>
+		<!-- Sombras -->
+		<div class="slider-shadow"></div>
+
+		<!-- Controles de Navegacion -->
+		<ul id="control-buttons" class="control-buttons"></ul>
+	</section>
+
+
+	<!-- seccion imágenes menu inferior-->
+  <section id="icons-index">
+      <div class="item"></div>
+      <div class="item item1">
+        <div class="table-item">
+          <div class="imgs-center">
+            <%= link_to image_tag('cultura.png'), :action => 'cultura', :controller => 'cultura' %>
+            <h2 class="graycolor"><%= link_to 'Cultura', :action => 'cultura', :controller => 'cultura' %></h2>
+            <span>Concientización en la importancia del reciclaje</span>
+          </div>
+          <div class="imgs-center ">
+						<div class="image-active">
+						<%=link_to image_tag('miruta.png'), :action => 'mi_ruta', :controller => 'mi_ruta' %>
+						</div>
+            <h2 class="graycolor"><%= link_to 'Mi Ruta', :action => 'mi_ruta', :controller => 'mi_ruta' %></h2>
+            <span>Seguimniento en tiempo real de la ruta de recolección en tu sector</span>
+          </div>
+          <div class="imgs-center">
+            <%= link_to image_tag('reportar.png'), :action => 'reportar', :controller => 'reportar' %>
+            <h2 class="graycolor"><%= link_to 'Reportar', :action => 'reportar', :controller => 'reportar' %></h2>
+            <span>Atención a casos especiales de desechos y casos especiales de residuos</span>
+          </div>
+          <div class="imgs-center">
+            <%= link_to image_tag('beneficios.png'), :action => 'beneficios', :controller => 'beneficios' %>
+            <h2 class="graycolor"><%= link_to 'Beneficios', :action => 'beneficios', :controller => 'beneficios' %></h2>
+            <span>Puedes depositar tus residuos y redimir por premios</span>
+          </div>
+					<div class="imgs-center">
+            <%= link_to image_tag('ecoaliados.png'), :action => 'ecoaliados', :controller => 'ecoaliados' %>
+            <h2 class="graycolor"><%= link_to 'Ecoaliados', :action => 'ecoaliados', :controller => 'ecoaliados' %></h2>
+            <span>¡Unete a nuestra iniciativa!</span>
+          </div>
+        </div>
+      </div>
+      <div class="item"></div>
+  </section>

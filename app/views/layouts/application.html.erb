@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LimpiApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'slide' %>
+    <%= stylesheet_link_tag 'styles' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+
+  </head>
+
+  <body>
+
+      <header>
+          <div class="logo">
+            <%=link_to image_tag('logo.png', :size=> '166x128'), :root %>
+
+          </div>
+            <div class="center-header">
+              <h2 class="white"><%= link_to_unless_current 'LimpiApp', :root %></h2>
+            </div>
+
+            <div class="header-right">
+
+              <div class="search">
+                <p class="white">
+                  <span><%= link_to_unless_current 'Registrarse', :action => 'registro', :controller => 'registro' %> </span>|
+                  <span> <%= link_to_unless_current 'Iniciar Sesión', :action => 'login', :controller => 'login' %></span>
+                </p>
+                <input type="search">
+                <button type="button"> Buscar</button>
+              </div>
+
+              <nav>
+                <ul class="menu">
+                  <li class="white nav"><%= link_to_unless_current 'Inicio', :root %></li>
+                  <li class="white nav"><%= link_to_unless_current 'Acerca De', :action=>'acercade', :controller=> 'acercade' %></li>
+                  <li class="white nav"><%= link_to_unless_current 'Eventos', :action=>'eventos', :controller=> 'eventos' %></li>
+                  <li class="white nav"><%= link_to_unless_current 'Contacto', :action=>'contacto', :controller=> 'contacto' %> </li>
+                </ul>
+              </nav>
+            </div>
+      </header>
+      <!--Fix right-->
+      <div class="right-tag">
+        <p><%=link_to_unless_current image_tag('recientes.png'), :action => 'recientes', :controller => 'recientes' %></p>
+        <hr class="divisor-line">
+        <p><%=link_to_unless_current image_tag('favoritos.png'), :action => 'favoritos', :controller => 'favoritos' %></p>
+        <hr class="divisor-line">
+        <p><%=link_to_unless_current image_tag('p_cercanos.png'), :action => 'puntos_cercanos', :controller => 'puntos_cercanos' %></p>
+      </div>
+
+    <%= yield %>
+
+    <footer>
+      <div class="copyright">
+          <span class=" white" >Copyright ©  Todos los derechos reservados 2018 • Diseñado y administrado por SCL Developers </span>
+      </div>
+      <div class="legal">
+        <p>
+        <%= link_to_unless_current 'Política de Privacidad', :action=>'politica', :controller=> 'politica' %> •
+        <%= link_to_unless_current 'Términos y Condiciones', :action=>'terminos', :controller=> 'terminos' %>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

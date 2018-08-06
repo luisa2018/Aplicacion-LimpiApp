@@ -1,0 +1,2 @@
+module MiRutaHelper
+end
