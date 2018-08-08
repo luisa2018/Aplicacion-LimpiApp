@@ -1,7 +1,18 @@
+.main-color {
+  color: #095A51; }
+
+.main-color:link {
+  color: #095A51 !important; }
+
 body {
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #666;
   margin: 0; }
+
+.contenedor {
+  width: 100rem;
+  margin: auto auto 15rem auto;
+  text-align: justify; }
 
 a:link {
   color: #ffffff;

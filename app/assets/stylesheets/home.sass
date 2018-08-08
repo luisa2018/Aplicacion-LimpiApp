@@ -1,16 +1,27 @@
 
 // variables
-$txt-size: 1rem
+$txt-size: 1.4rem
 $txt-color: #666
 $green : #456789
 $background-header: #095A51
 $white : #fff
 $link-hover: rgba(0, 150, 136, 0.78)
 
+.main-color
+  color: $background-header
+
+.main-color:link
+  color: $background-header !important
+
 body
   font-size: $txt-size
   color: $txt-color
   margin: 0
+
+.contenedor
+  width: 100rem
+  margin: auto auto 15rem auto
+  text-align: justify
 
 a:link
   color: #ffffff

@@ -27,7 +27,8 @@
 
               <div class="search">
                 <p class="white">
-                  <span><%= link_to_unless_current 'Registrarse', :action => 'registro', :controller => 'registro' %> </span>|
+                  <span>
+                    <%= link_to_unless_current 'Registrarse', :action => 'registro', :controller => 'registro' %> </span>|
                   <span> <%= link_to_unless_current 'Iniciar Sesión', :action => 'login', :controller => 'login' %></span>
                 </p>
                 <input type="search">

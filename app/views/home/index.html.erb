@@ -39,13 +39,15 @@
 		<!-- Controles de Navegacion -->
 		<ul id="control-buttons" class="control-buttons"></ul>
 	</section>
+
 	<!-- seccion imágenes menu inferior-->
   <section id="icons-index">
       <div class="item"></div>
       <div class="item item1">
         <div class="table-item">
           <div class="imgs-center">
-            <%= link_to image_tag('cultura.png'), :action => 'cultura', :controller => 'cultura' %>
+
+            <%= link_to image_tag('cultura.png'), :class => 'image-active', :action => 'cultura', :controller => 'cultura' %>
             <h2 class="graycolor"><%= link_to 'Cultura', :action => 'cultura', :controller => 'cultura' %></h2>
             <span>Concientización en la importancia del reciclaje</span>
           </div>

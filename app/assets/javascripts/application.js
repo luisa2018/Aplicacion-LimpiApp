@@ -23,14 +23,17 @@ $('.logo').mouseenter(function () {
   $(this).animate({marginLeft:"+=10px"}, 200);
 });
 $('.logo').mouseleave(function () {
-$(this).animate({marginLeft:"-=10px"}, 200);
+  $(this).animate({marginLeft:"-=10px"}, 200);
 });
-/*Estilos para fila de imagenes del home*/
+
+/*- - - - - animación para fila de imagenes del home - - - -*/
 
 $('.imgs-center').mouseenter(function () {
   $(this).animate({marginTop: "-=50px"}, 200).css({'color':'#095A51'});
-  $('.graycolor a').css({'color':'#095A51'});
+  $('.graycolor a').css({'color':'#666'});
+  
 });
+
 $('.imgs-center').mouseleave(function () {
   $(this).animate({marginTop: "+=50px"}, 200).css({'color':'#666'});
   $('.graycolor a').css({'color':'#666'});
