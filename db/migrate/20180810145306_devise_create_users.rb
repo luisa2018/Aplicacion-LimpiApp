@@ -3,7 +3,7 @@
 class DeviseCreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
-      ## Para hacer login
+      ## Datos para login
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
@@ -17,8 +17,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.string :localidad, null: false, default: ""
       t.string :tarjeta, null: false, default: ""
 
-
-      ## Para Recuperar cuenta
+      ## Datos para recuperar cuenta
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
 
