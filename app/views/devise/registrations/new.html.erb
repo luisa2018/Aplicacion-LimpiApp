@@ -7,21 +7,57 @@
       <%= devise_error_messages! %>
 
       <div class="field">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.label :nombre %><br />
+        <%= f.text_field :nombre, autofocus: true, autocomplete: "Nombre:" %>
       </div>
+
+      <div class="field">
+        <%= f.label :apellido %><br />
+        <%= f.text_field :apellido, autofocus: true, autocomplete: "Apellido:" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :cedula %><br />
+        <%= f.text_field :cedula, autofocus: true, autocomplete: "Número de documento:" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :direccion %><br />
+        <%= f.text_field :direccion, autofocus: true, autocomplete: "Dirección de residencia:" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "Correo electrónico:" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :telefono %><br />
+        <%= f.text_field :telefono, autofocus: true, autocomplete: "Teléfono de contacto:" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :localidad %><br />
+        <%= f.text_field :localidad, autofocus: true, autocomplete: "Localidad:" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :tarjeta %><br />
+        <%= f.text_field :tarjeta, autofocus: true, autocomplete: "Número tarjeta (SITP o Transmilenio):" %>
+      </div>
+
 
       <div class="field">
         <%= f.label :password %>
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "off" %>
+        <%= f.password_field :password, autocomplete: "Escoje una contraseña:" %>
       </div>
 
       <div class="field">
         <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        <%= f.password_field :password_confirmation, autocomplete: "Repetir contraseña:" %>
         <p>&nbsp;</p>
       </div>
 

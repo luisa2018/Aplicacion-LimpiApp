@@ -9,13 +9,17 @@ body {
   color: #666;
   margin: 0; }
 
+@media screen and (min-width: 1024px) and (max-width: 1350px) {
+  h2 {
+    font-size: 23px; } }
+
 .contenedor {
   width: 100rem;
   margin: auto auto 15rem auto;
   text-align: justify; }
 
 .center {
-  width: 41rem;
+  width: 50rem;
   margin: 0 auto 0 auto; }
 
 a:link {
@@ -76,18 +80,28 @@ nav {
   position: absolute;
   right: 5rem;
   top: 1rem;
-  width: 36rem; }
+  width: 40rem; }
+  @media screen and (min-width: 1024px) and (max-width: 1350px) {
+    .search {
+      width: 32rem; } }
 
 .ingresar {
   display: contents; }
+
+.menu {
+  width: 90rem; }
 
 .menu li {
   display: inline-block;
   font-size: 2.2rem;
   padding-right: 8rem;
   height: 7rem;
-  margin-right: 1.8rem;
+  margin-right: 6rem;
   padding: 3rem; }
+  @media screen and (min-width: 1024px) and (max-width: 1350px) {
+    .menu li {
+      font-size: 1.6rem;
+      margin-right: 1rem; } }
 
 li:hover {
   background-color: rgba(0, 150, 136, 0.78); }
@@ -99,10 +113,16 @@ li:hover {
   font-size: 1.5rem;
   -webkit-align-self: flex-center;
   align-self: flex-center; }
+  @media screen and (min-width: 1024px) and (max-width: 1350px) {
+    .copyright {
+      font-size: 1rem; } }
 
 .legal {
   position: absolute;
   right: 5rem; }
+  @media screen and (min-width: 1024px) and (max-width: 1350px) {
+    .legal {
+      font-size: 1rem; } }
 
 .legal a {
   color: #fff; }
@@ -131,11 +151,16 @@ li:hover {
   display: flex;
   width: 166rem;
   flex-direction: row; }
+  @media screen and (min-width: 1024px) and (max-width: 1350px) {
+    .table-item {
+      width: 100rem; } }
 
 .imgs-center {
   width: 49rem;
   margin-right: 7rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 12px;
+  margin-right: 14rem; }
 
 footer {
   background-color: #095A51;
@@ -158,6 +183,9 @@ footer {
   background-color: rgba(0, 150, 136, 0.78);
   z-index: 999;
   top: 50rem; }
+  @media screen and (min-width: 1024px) and (max-width: 1350px) {
+    .right-tag {
+      top: 38rem; } }
 
 .divisor-line {
   color: #fff;

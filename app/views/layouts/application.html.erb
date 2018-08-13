@@ -28,7 +28,7 @@
                 <p class="navbar-text pull-right white ingresar">
                     <span>
                       <% if user_signed_in? %>
-                        Logged in as <strong><%= current_user.email %></strong>.
+                        Has iniciado sesión como <strong><%= current_user.nombre %> |</strong>
                         <i class="fa fa-wrench white"></i>
                         <%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'navbar-link' %> |
                         <i class="fa fa-sign-out white"></i>
@@ -38,7 +38,9 @@
                         <%= link_to "Registrarse", new_user_registration_path, :class => 'navbar-link'  %> |
                         <i class="fa fa-unlock-alt white"></i>
                         <%= link_to "Ingresar", new_user_session_path, :class => 'navbar-link'  %>
+
                       <% end %>
+                      <p></p>
                   </span>
                 </p>
                 <input type="search">
@@ -61,7 +63,7 @@
       </header>
       <!--Fix right-->
       <div class="right-tag">
-        <p><%=link_to_unless_current image_tag('recientes.png'), recientes_recientes_path %></p>
+        <p><%=link_to_unless_current image_tag('recientes.png'), :back %></p>
         <hr class="divisor-line">
         <p><%=link_to_unless_current image_tag('favoritos.png'), favoritos_favoritos_path %></p>
         <hr class="divisor-line">

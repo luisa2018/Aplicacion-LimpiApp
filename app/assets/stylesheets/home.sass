@@ -7,6 +7,10 @@ $background-header: #095A51
 $white : #fff
 $link-hover: rgba(0, 150, 136, 0.78)
 
+// tamaños para responsive
+$laptop-min : 1024px
+$laptop-max : 1350px
+
 .main-color
   color: $background-header
 
@@ -18,13 +22,17 @@ body
   color: $txt-color
   margin: 0
 
+h2
+  @media screen and (min-width: $laptop-min) and (max-width: $laptop-max)
+    font-size: 23px
+
 .contenedor
   width: 100rem
   margin: auto auto 15rem auto
   text-align: justify
 
 .center
-  width: 41rem
+  width: 50rem
   margin: 0 auto 0 auto
 
 a:link
@@ -82,10 +90,16 @@ nav
   position: absolute
   right: 5rem
   top: 1rem
-  width: 36rem
+  width: 40rem
+  @media screen and (min-width: $laptop-min) and (max-width: $laptop-max)
+    width: 32rem
+
 
 .ingresar
   display: contents
+
+.menu
+  width: 90rem
 
 .menu
   li
@@ -93,8 +107,11 @@ nav
     font-size: 2.2rem
     padding-right: 8rem
     height: 7rem
-    margin-right: 1.8rem
+    margin-right: 6rem
     padding: 3rem
+    @media screen and (min-width: $laptop-min) and (max-width: $laptop-max)
+      font-size: 1.6rem
+      margin-right: 1rem
 
 li:hover
   background-color: $link-hover
@@ -106,10 +123,14 @@ li:hover
   font-size: 1.5rem
   -webkit-align-self: flex-center
   align-self: flex-center
+  @media screen and (min-width: $laptop-min) and (max-width: $laptop-max)
+    font-size: 1rem
 
 .legal
   position: absolute
   right: 5rem
+  @media screen and (min-width: $laptop-min) and (max-width: $laptop-max)
+    font-size: 1rem
 
 .legal a
   color: $white
@@ -138,11 +159,16 @@ li:hover
   display: flex
   width: 166rem
   flex-direction: row
+  @media screen and (min-width: $laptop-min) and (max-width: $laptop-max)
+    width: 100rem
 
 .imgs-center
   width: 49rem
   margin-right: 7rem
   text-align: center
+  @media screen and (min-width: $laptop-min) and (max-width: $laptop-max)
+  font-size: 12px
+  margin-right: 14rem
 
 footer
   background-color: $background-header
@@ -165,6 +191,8 @@ footer
     background-color: $link-hover
     z-index: 999
     top: 50rem
+    @media screen and (min-width: $laptop-min) and (max-width: $laptop-max)
+      top: 38rem
 
 .divisor-line
   color: $white
