@@ -157,3 +157,100 @@ ul {
 	 		height: 21.6rem;
 	 	}
  }
+
+ /*- - - - - - Estilos para Acerca de*/
+
+ .skew-25 {
+ 	-moz-transform: skew(-25deg, 0);
+ 	-ms-transform: skew(-25deg, 0);
+ 	-o-transform: skew(-25deg, 0);
+ 	-webkit-transform: skew(-25deg, 0);
+ 	transform: skew(-25deg, 0);
+ }
+
+ .skew25 {
+ 	-moz-transform: skew(25deg, 0);
+ 	-ms-transform: skew(25deg, 0);
+ 	-o-transform: skew(25deg, 0);
+ 	-webkit-transform: skew(25deg, 0);
+ 	transform: skew(25deg, 0);
+ }
+
+ .accordion-panel {
+ 	margin: 15px 40px;
+ 	padding: 0 15px;
+ 	border-left: 3px #d4d4d4 solid;
+ }
+
+ .accordion li.active > h3 u:before {
+ 	content: "\f068";
+ 	font-family: FontAwesome;
+ }
+
+ .accordion.style-2 li.active h3{
+ 	background:#f1f1f1
+ }
+
+ .accordion li > h3 {
+ 	overflow: hidden;
+ 	margin: 0 0 15px;
+ 	-moz-transition: all 0.2s ease 0s;
+ 	-ms-transition: all 0.2s ease 0s;
+ 	-o-transition: all 0.2s ease 0s;
+ 	-webkit-transition: all 0.2s ease 0s;
+ 	transition: all 0.2s ease 0s;
+ }
+ .accordion li > h3 a {
+ 	float: left;
+ 	margin: 0;
+ 	padding: 0 15px;
+ 	border: 1px #d4d4d4 solid;
+ 	background: #fff;
+ 	line-height: 28px;
+ 	display: block;
+ 	width: 90%;
+ 	color: #a8a8a8;
+ 	text-transform: uppercase;
+ 	font-size: 12px;
+ }
+ .accordion li > h3 i.fa {
+ 	margin-right: 7px;
+ }
+ .accordion li > h3 u {
+ 	display: inline-block;
+ 	float: left;
+ 	margin: 0 5px 0 10px;
+ 	padding: 10px 10px 8px 10px;
+ 	border: 1px #d4d4d4 solid;
+ 	background: #fff;
+ 	color: #a8a8a8;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	font-size: 10px;
+ 	line-height: 1;
+ 	cursor: pointer;
+ 	-moz-transition: all 0.2s ease 0s;
+ 	-ms-transition: all 0.2s ease 0s;
+ 	-o-transition: all 0.2s ease 0s;
+ 	-webkit-transition: all 0.2s ease 0s;
+ 	transition: all 0.2s ease 0s;
+ }
+ .accordion li > h3 u:before {
+ 	display: block;
+ 	content: "\f067";
+ 	font-family: FontAwesome;
+ }
+ .accordion li > h3[class*="skew-"] u::before {
+ 	-moz-transform: skew(25deg, 0);
+ 	-ms-transform: skew(25deg, 0);
+ 	-o-transform: skew(25deg, 0);
+ 	-webkit-transform: skew(25deg, 0);
+ 	transform: skew(25deg, 0);
+ }
+ .accordion li.active > h3 u:before {
+ 	content: "\f068";
+ 	font-family: FontAwesome;
+ }
+ .accordion li > h3 a span {
+ 	display: block;
+ }

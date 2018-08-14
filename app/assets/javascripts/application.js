@@ -31,7 +31,7 @@ $('.logo').mouseleave(function () {
 $('.imgs-center').mouseenter(function () {
   $(this).animate({marginTop: "-=50px"}, 200).css({'color':'#095A51'});
   $('.graycolor a').css({'color':'#666'});
-  
+
 });
 
 $('.imgs-center').mouseleave(function () {
