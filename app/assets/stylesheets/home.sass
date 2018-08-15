@@ -1,6 +1,8 @@
 
 // variables
 $txt-size: 1.4rem
+$gray-light: #f8f8f8
+$gray: #e2e2e2
 $txt-color: #666
 $green : #456789
 $background-header: #095A51
@@ -12,7 +14,10 @@ $laptop-min : 1024px
 $laptop-max : 1350px
 
 .main-color
-  color: $background-header
+  color: $background-header !important
+
+.main-color a
+    color: $background-header !important
 
 .main-color:link
   color: $background-header !important
@@ -34,6 +39,22 @@ h2
 .center
   width: 50rem
   margin: 0 auto 0 auto
+
+.table-gray-light
+  background-color: $gray-light
+  -webkit-align-self: center
+  align-self: center
+  margin: 0
+  padding: .5rem
+  width: 30rem
+
+.table-gray
+  background-color: $gray
+  -webkit-align-self: center
+  align-self: center
+  margin: 0
+  padding: .5rem
+  width: 30rem
 
 a:link
   color: #ffffff

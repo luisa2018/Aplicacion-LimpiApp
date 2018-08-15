@@ -1,0 +1,20 @@
+<table>
+
+  <tr>
+    <th><h3 class="table-gray main-color"><%= reporte.asunto %></h3></th>
+    <th rowspan="3"><%= image_tag(reporte.image.url, alt: 'Image', size: '180x180') if reporte.image? %></th>
+  </tr>
+  <tr>
+    <td><h4 class="table-gray-light"><%= reporte.fecha %></h4></td>
+  </tr>
+  <tr>
+    <td><h4 class="table-gray"><%= reporte.ubicacion %></h4></td>
+  </tr>
+  <tr>
+    <td><span class="table-gray-light"><%= truncate(reporte.observaciones, length: 150) %></span></td>
+  </tr>
+</table>
+
+    <br />
+    <p><%= link_to 'Editar', edit_reporte_path(reporte), :class => 'main-color a' %></p>
+    <hr>

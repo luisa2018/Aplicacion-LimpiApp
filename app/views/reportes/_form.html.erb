@@ -1,0 +1,32 @@
+
+      <p></p>
+      <%= form_for reporte do |f| %>
+
+        <div class="field">
+          <%= f.label 'Asunto:' %> &nbsp;&nbsp;&nbsp;&nbsp;
+          <%= f.text_field :asunto %><br /><br />
+        </div>
+
+        <div class="field">
+          <%= f.label 'Fecha:' %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <%= f.text_field :fecha %><br /><br />
+        </div>
+
+        <div class="field">
+          <%= f.label 'Ubicación:' %>&nbsp;
+          <%= f.text_field :ubicacion %><br /><br />
+        </div>
+
+        <div class="field">
+          <%= f.label 'Observaciones:' %><br />
+          <%= f.text_area :observaciones, size: '31px x 50px'  %><br /><br />
+        </div>
+
+        <div class="field">
+          <%= f.label 'Adjuntar imagenes:' %>
+          <%= f.file_field :image %><br /><br />
+        </div>
+        <%= image_tag(@reporte.image.url, alt: 'Image', size: '200x200') if @reporte.image? %>
+        <br /><br />
+      <%= f.submit 'Actualizar Reporte' %>
+    <% end %>

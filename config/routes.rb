@@ -3,7 +3,11 @@ Rails.application.routes.draw do
         sessions: 'users/sessions', registrations: 'registrations'
       }
 
+
   devise_scope :users do
+
+    resources :reportes
+  
     get 'puntos_cercanos/puntos_cercanos'
     get 'favoritos/favoritos'
     get 'recientes/recientes'
@@ -11,7 +15,6 @@ Rails.application.routes.draw do
     get 'politica/politica'
     get 'ecoaliados/ecoaliados'
     get 'beneficios/beneficios'
-    get 'reportar/reportar'
     get 'mi_ruta/mi_ruta'
     get 'cultura/cultura'
     get 'contacto/contacto'

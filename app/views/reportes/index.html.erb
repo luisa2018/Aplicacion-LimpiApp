@@ -1,0 +1,32 @@
+<div class="contenedor">
+
+  <div class="center">
+    <p></p>
+    <h1 class="main-color"><i class="fa fa-recycle"></i> Reportes</h1>
+    <hr>
+    <p></p>
+    <p>En esta sección podrás generar reportes sobre zonas y/o cuadras que presenten un evidente descuido y presentación antihigienica.</p>
+    <div class="main-color">
+
+    </div>
+    <p>&nbsp;</p>
+    <% if user_signed_in? %>
+    <h2 class="main-color">Mis reportes:</h2>
+    <p>&nbsp;</p>
+    <hr>
+    <p></p>
+    <%= render @reportes %>
+    <br />
+    <%= link_to 'Crear un reporte', new_reporte_path, :class => 'main-color a' %>
+
+    <% else %>
+    <div class="center">
+    <%= button_to 'Inicia Sesión', new_user_session_path %> ó
+    <%= button_to 'Registrate', new_user_registration_path %>
+    <p></p>
+    Para generar un reporte
+  </div>
+    <% end %>
+
+  </div>
+</div>

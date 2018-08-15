@@ -1,5 +1,8 @@
 .main-color {
-  color: #095A51; }
+  color: #095A51 !important; }
+
+.main-color a {
+  color: #095A51 !important; }
 
 .main-color:link {
   color: #095A51 !important; }
@@ -21,6 +24,22 @@ body {
 .center {
   width: 50rem;
   margin: 0 auto 0 auto; }
+
+.table-gray-light {
+  background-color: #f8f8f8;
+  -webkit-align-self: center;
+  align-self: center;
+  margin: 0;
+  padding: 0.5rem;
+  width: 30rem; }
+
+.table-gray {
+  background-color: #e2e2e2;
+  -webkit-align-self: center;
+  align-self: center;
+  margin: 0;
+  padding: 0.5rem;
+  width: 30rem; }
 
 a:link {
   color: #ffffff;

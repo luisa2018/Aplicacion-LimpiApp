@@ -1,0 +1,35 @@
+<div class="contenedor">
+  <div class="center">
+    <br />
+    <br />
+    <h1>Resumen reporte:</h1>
+    <br />
+    <br />
+
+
+    <table>
+      <tr>
+        <h3 class="table-gray-light"><strong>Asunto: </strong><%= @reporte.asunto %></h3>
+      </tr>
+      <tr>
+        <h4 class="table-gray"><strong>Fecha: </strong><%= @reporte.fecha %></h4>
+      </tr>
+
+      <tr>
+        <h4 class="table-gray-light"><strong>Ubicación: </strong><%= @reporte.ubicacion %></h4>
+      </tr>
+
+      <tr>
+        <h4 class="table-gray"><strong>Obervaciones: </strong><%= @reporte.observaciones %></h4>
+      </tr>
+    </table>
+    <br />
+
+    <h4 class="main-color">Imagen:</h4>
+    <%= image_tag(@reporte.image.url, alt: 'Image', size: '200x200') if @reporte.image? %>
+    <br /><br />
+
+    <p><%= link_to 'Editar', edit_reporte_path(@reporte), :class => 'main-color a' %></p>
+    <p><%= link_to 'Regresar', :back, :class => 'main-color a' %></p>
+  </div>
+</div>
